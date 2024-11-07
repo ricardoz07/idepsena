@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0HBwcHBxAPBwcHBw0HBwcHDRAICQcNIBEiIiARHx8YHCggGBolGx8VITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0NGg0NEisZFR0rKysrKy0rLS0rKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAL4BCgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAwIBBv/EABcQAQEBAQAAAAAAAAAAAAAAAAASEQH/xAAZAQEBAQADAAAAAAAAAAAAAAAAAgEDBAX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAMAwEAAhEDEQA/APc6anRTvvGU01OigU01inKBTTU6doG9NYooG9NTp2gb01OnaBvTU6doG9NYpygU01iigb01iigb01OnaBvTWKcoFNNYooG9NTooFNNTooFNNTooE6KSopcarRSVFEFaKSoogrRSVFEFaKSoogrRSVFEFaKSoogrRSVFEFaKSoogrRSVFEFaKSoogrRSVFEFaKSoogrRSVFEFaKSoogrRSVFEFaKSooglRSVlqgrRSVlkFaKSsogrRSVlkFaKSssgrRSVuWQWopKyyCtFI27ZBWikrcsgtRSVlEFaKSssgrRSNu2QVopKyyCtFJWUQVopG3bIK0UlZZBWikqKII0UhRS4L0UhRRBeikKKIL0UhRRBeikKKIL0UhRRBeikKKIL0UhRRBeikKKIL0UhRRBeikKKIL0UhRRBeikKKIL0UhRRBeikKKIL0UhRRBeikKKII0WjRS41aykaKILWWjRRBai0aKILWUjRRBay0aKILWWjRRBay0aKILWWjRRBay0aKILWWjRRBay0aKILWWjRRBay0aKILWUjRRBay0aKILUWjRRBCikaKckFqKRoogtRSNFEFqKRoogtRSNFEFqKRoogtRSNFEFqKRoogtRSNFEFqKRoogtRSNFEFqKRoogtRSNFEFqKRoogtRSNFEFqKRoogtRSNFEEKKQopcF6KQoogvRSFFEF6KQoogvRSFFEF6KQoogvRSFFEF6KQoogvRSFFEF6KQoogvRSFFEF6KQoogvRSFFEF6KQoogvRSFFEF6KQoogvRSFFEELLRopyQWstGiiC1lo0UQWstGiiC1lo0UQWstGiiC1lo0UQWstGiiC1lo0UQWstGiiC1lo0UQWstGiiC1lo0UQWstGiiC1lo0UQWstGiiC1lo0UQQopGilxq1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiCNFI0UuC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiC1FI0UQWopGiiCVcKT01cIpRSemkIpRSemkIpXCk9NIRSik9NIRSik9NIRSik9NIRSuFJ6aQilFJ6aQilFJ6aQilFJ6aQilFJ6aQilFJ6aQilFJ6aQilcK4nppCKUUnppCKVwriemkIlprGmqblvTWXNDLeuayBlrXdY00Mt6axoGW9NY00Mt6axpoZa13WXAy3prIGWtNY13Qy1prGgZb01jTQy3prGmhlvTWDQy3prGmhlrXdY10Mta4zruhl//9k=);   
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header img.escudo {
+    width: 90px;
+    height: auto;
+    margin-right: 25px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+/* Estilos para el menú de navegación */
+.nav {
+    display: none;
+    background-color: #004080;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.964);
+    z-index: 100;
+}
+
+.nav.active {
+    display: block;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 10px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav a:hover {
+    background-color:  rgb(255, 255, 255);
+}
+
+
+/* Menú */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff; /* Fondo blanco para una apariencia limpia */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+h2 {
+    color: #004080; /* Azul principal para encabezados */
+    border-bottom: 2px solid #d3e3ff; /* Línea azul claro bajo los encabezados */
+    padding-bottom: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #004080;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00264d; /* Un tono más oscuro al hacer hover */
+}
+
+/* Pie de página */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+.galery {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.galery > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(0.25, .4, .45, 1.4);
+}
+
+.galery > div:hover {
+    flex: 5;
+}
